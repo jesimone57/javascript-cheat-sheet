@@ -1,7 +1,7 @@
 # javascript-cheat-sheet
 JavaScript Cheat Sheet
 
-Values that equate to false
+### Values that equate to false
 * false
 * 0
 * ""
@@ -10,7 +10,7 @@ Values that equate to false
 * undefined
 * NaN
 
-Values that equate to true
+### Values that equate to true
 * everything not false
 * true
 * 0.5
