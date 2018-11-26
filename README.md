@@ -9,3 +9,9 @@ Values that equate to false
 * null
 * undefined
 * NaN
+
+Values that equate to true
+* everything not false
+* true
+* 0.5
+* "0"
