@@ -15,3 +15,9 @@ JavaScript Cheat Sheet
 * true
 * 0.5
 * "0"
+
+### JavaScript built-in objects
+* Math
+* Date
+* String
+* Number
