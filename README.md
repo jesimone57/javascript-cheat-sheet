@@ -17,6 +17,7 @@ JavaScript Cheat Sheet
 * "0"
 
 ### JavaScript built-in objects
+[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects]
 * Math
 * Date
 * String
