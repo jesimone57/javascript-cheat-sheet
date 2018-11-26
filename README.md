@@ -22,3 +22,4 @@ JavaScript Cheat Sheet
 * Date
 * String
 * Number
+* JSON
