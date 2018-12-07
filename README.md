@@ -23,3 +23,18 @@ JavaScript Cheat Sheet
 * String
 * Number
 * JSON
+
+### Accessing elements by id
+  var e = document.getElementById("p");
+  var h = document.getElementById("h");
+  var b = document.getElementById("b");
+  e.innerText = "new Text";
+  h.innerText = "New Header";
+
+### Handling events 
+  function but1() {
+     alert("ok clicked");
+  }
+
+  b.addEventListener('click',  but1);
+  
