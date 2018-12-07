@@ -18,11 +18,11 @@ JavaScript Cheat Sheet
 
 ### JavaScript built-in objects
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects]
-* Math
-* Date
-* String
-* Number
-* JSON
+* [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+* [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+* [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+* [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+* [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)
 
 ### To Create a Web Page
 Always have the script tag at the bottom of the body tag.
