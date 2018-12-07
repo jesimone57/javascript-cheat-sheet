@@ -86,3 +86,10 @@ function send(...ids) {
 }
 send(5,3,2,6,8);
 ```
+### Destructuring Arrays
+Able to assign individual elements of an array to a variable
+```
+let ids = [1,8,7,3,8];
+let [car1, car2, car3, car4, car5] = ids;
+console.log(car5);
+```
