@@ -24,7 +24,7 @@ JavaScript Cheat Sheet
 * Number
 * JSON
 
-## To Create a Web Page
+### To Create a Web Page
 Always have the script tag at the bottom of the body tag.
 ```
 <body>
