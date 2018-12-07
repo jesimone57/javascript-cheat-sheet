@@ -24,7 +24,16 @@ JavaScript Cheat Sheet
 * Number
 * JSON
 
-### Example HTML
+## To Create a Web Page
+Always have the script tag at the bottom of the body tag.
+```
+<body>
+ ...
+  <script src="script.js"></script>
+</body
+```
+
+### Example Web Page
 ```
 <!DOCTYPE html>
 <html>
