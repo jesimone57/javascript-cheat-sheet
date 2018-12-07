@@ -24,21 +24,42 @@ JavaScript Cheat Sheet
 * Number
 * JSON
 
+### Example HTML
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+  <h1 id="h">Hello World!</h1>
+  <p id="p">some text here</p>
+  <button id="b">OK</button>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
+```
+
 ### Accessing elements by id
 ```
-  var e = document.getElementById("p");
-  var h = document.getElementById("h");
-  var b = document.getElementById("b");
-  e.innerText = "new Text";
-  h.innerText = "New Header";
+var e = document.getElementById("p");
+var h = document.getElementById("h");
+var b = document.getElementById("b");
+e.innerText = "new Text";
+h.innerText = "New Header";
 ```
 
 ### Handling events 
 ```
-  function but1() {
-     alert("ok clicked");
-  }
+function but1() {
+  alert("ok clicked");
+}
 
-  b.addEventListener('click',  but1);
+b.addEventListener('click',  but1);
 ```
   
