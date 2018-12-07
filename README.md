@@ -62,4 +62,9 @@ function but1() {
 
 b.addEventListener('click',  but1);
 ```
-  
+
+### Removing and adding Elements
+```
+p.style.display = 'none';   // remove it
+p.style.display = 'block';  // add it back
+```
