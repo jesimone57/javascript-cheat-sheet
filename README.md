@@ -77,3 +77,12 @@ b.addEventListener('click',  but1);
 p.style.display = 'none';   // remove it
 p.style.display = 'block';  // add it back
 ```
+
+# Rest Parameters
+Able to pass multiple parameters as one 
+```
+function send(...ids) {
+    ids.forEach(element => console.log(element));
+}
+send(5,3,2,6,8);
+```
