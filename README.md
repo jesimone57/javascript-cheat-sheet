@@ -87,7 +87,7 @@ function send(...ids) {
 send(5,3,2,6,8);
 ```
 ### Destructuring Arrays
-Able to assign individual elements of an array to a variable
+Quick way to assign array elements to one or more variables
 ```
 let ids = [1,8,7,3,23];
 let [car1, car2, car3, car4, car5] = ids;
@@ -95,4 +95,55 @@ console.log(car5);   // 23
 
 let [first, ...rest] = ids;
 console.log(rest);   // [8, 7, 3, 23]
+
+let [,, ...remaining] = ids;   // skip first 2 parameters
+console.log(remaining);   // [7, 3, 23]
+```
+### Destructuring Objects
+Quick way to assign object properties to one or more variables
+```
+let car = {id: 5000, style: 'convertible', year: 1967 };
+let {id, style} = car;
+console.log(id, style);  // 5000 "convertible"
+
+// Note:  property names must match the destructured variable names, otherwise we get undefined
+let car1 = {id1: 5000, style1: 'convertible', year: 1967 };
+let id1, style1;
+{id1, style1} = car; // unexpected token error due to fact that { } begin and end code blocks as well
+({id1, style1} = car1);   // 5000 "convertible"
+```
+
+### Spread Syntax
+Allows us to take an array and spread out its elements
+```
+function startCars(car1, car2, car3) {
+   console.log(car1, car2, car3);
+}
+
+let carIds = [100, 200, 300];
+startCars(...carIds);    // passing array to function spreads out array elements into parameters ... 100, 200, 300
+
+let carCodes = 'abc';
+startCars(...carCodes); // a, b, c
+
+```
+
+### Determining Variable Type
+```
+let a = 'hello';
+console.log(typeof(a));  // string
+let b = true;
+console.log(typeof(b));  // boolean
+let c = 4.2;
+console.log(typeof(c));  // number
+let d = [1,2,3];
+console.log(typeof(d));  // object
+let e = {x:1, y:2};
+console.log(typeof(e));  // object
+let f = function() {};
+console.log(typeof(f));
+
+console.log(typeof(null));  // object
+console.log(typeof(undefined));  // undefined
+console.log(NaN);          // number
 ```
