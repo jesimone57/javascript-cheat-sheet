@@ -141,9 +141,21 @@ console.log(typeof(d));  // object
 let e = {x:1, y:2};
 console.log(typeof(e));  // object
 let f = function() {};
-console.log(typeof(f));
+console.log(typeof(f));  // function
 
 console.log(typeof(null));  // object
 console.log(typeof(undefined));  // undefined
 console.log(NaN);          // number
+
+let arr = ['hello', true, 4, {x:1, y:2}, [1,2,3], "asd", NaN, null, undefined];
+for (let i = 0; i< arr.length; i++) {
+    console.log("typeof("+arr[i]+") = "+typeof(arr[i]));
+}
+```
+
+### Common Type Conversions
+```
+foo.toString();    // convert to string
+Number.parseInt('55');   // convert to number
+Number.parseFloat('55.99');  // convert to nummber
 ```
