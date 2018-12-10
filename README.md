@@ -78,7 +78,7 @@ p.style.display = 'none';   // remove it
 p.style.display = 'block';  // add it back
 ```
 
-# Rest Parameters
+### Rest Parameters
 Able to pass multiple parameters as one 
 ```
 function send(...ids) {
@@ -89,7 +89,10 @@ send(5,3,2,6,8);
 ### Destructuring Arrays
 Able to assign individual elements of an array to a variable
 ```
-let ids = [1,8,7,3,8];
+let ids = [1,8,7,3,23];
 let [car1, car2, car3, car4, car5] = ids;
-console.log(car5);
+console.log(car5);   // 23
+
+let [first, ...rest] = ids;
+console.log(rest);   // [8, 7, 3, 23]
 ```
