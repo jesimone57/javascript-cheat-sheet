@@ -159,3 +159,12 @@ foo.toString();    // convert to string
 Number.parseInt('55');   // convert to number
 Number.parseFloat('55.99');  // convert to nummber
 ```
+
+### Equality
+```
+if ('0' == 0) { console.log("'0' == 0");}  // auto type conversion
+if (!('0' === 0)) { console.log(" not '0' === 0");}   // strict equality.  no auto type conversion
+```
+
+### Operator Precedence
+[MDN Operator Precedence Page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
