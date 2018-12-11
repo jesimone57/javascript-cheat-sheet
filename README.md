@@ -222,10 +222,10 @@ console.log(app.getId());
 
 ### Arrow Functions
 ```
-let func = () => 123;   // func takes no arguments
-console.log(typeof(func));
+let func = () => 123;       // func takes no parameters
+console.log(typeof(func));  // function
 
 let func2 = (a, b) => 123 + a * b;   // func2 takes 2 parameters
-console.log(typeof(func2));
-console.log(func2(2,3));
+console.log(typeof(func2));  // function
+console.log(func2(2,3));     // 129
 ```
