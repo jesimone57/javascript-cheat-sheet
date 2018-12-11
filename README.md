@@ -167,3 +167,21 @@ console.log('0' !== 0);  // true. strict inequality.  no auto type conversion
 
 ### Operator Precedence
 [MDN Operator Precedence Page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+
+### let and const respect Block Scope, but var does not
+```
+if (5 === 5) {
+    let msg = '5 equal 5';
+}
+console.log(msg);  // error msg is not defined
+
+if (5 === 5) {
+    let msg = '5 equal 5';
+}
+console.log(msg);  // error msg is not defined
+
+if (5 === 5) {
+    var msg = '5 equal 5';
+}
+console.log(msg);  // 5 equal 5
+```
