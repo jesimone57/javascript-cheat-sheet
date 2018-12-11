@@ -162,8 +162,10 @@ Number.parseFloat('55.99');  // convert to nummber
 
 ### Equality
 ```
-if ('0' == 0) { console.log("'0' == 0");}  // auto type conversion
-if (!('0' === 0)) { console.log(" not '0' === 0");}   // strict equality.  no auto type conversion
+console.log('0' == 0);  // true.  auto type conversion
+console.log('0' != 0);  // false
+console.log('0' === 0);  // false.  strict equality.  no auto type conversion 
+console.log('0' !== 0);  // true. strict inequality.  no auto type conversion
 ```
 
 ### Operator Precedence
