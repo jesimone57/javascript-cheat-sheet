@@ -229,3 +229,17 @@ let func2 = (a, b) => 123 + a * b;   // func2 takes 2 parameters
 console.log(typeof(func2));  // function
 console.log(func2(2,3));     // 129
 ```
+
+### Expanding Objects using Prototypes
+```
+String.prototype.hello = function() {
+    return 'hello ' + this.toString();
+};
+console.log("fred".hello());   //  hello fred
+
+
+Number.prototype.power = function(exp) {
+    return Math.pow(this, exp);
+};
+console.log((5).power(2));   // 25
+```
