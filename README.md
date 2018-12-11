@@ -130,22 +130,19 @@ startCars(...carCodes); // a, b, c
 
 ### Determining Variable Type
 ```
-let a = 'hello';
-console.log(typeof(a));  // string
-let b = true;
-console.log(typeof(b));  // boolean
-let c = 4.2;
-console.log(typeof(c));  // number
-let d = [1,2,3];
-console.log(typeof(d));  // object
-let e = {x:1, y:2};
-console.log(typeof(e));  // object
-let f = function() {};
-console.log(typeof(f));  // function
+console.log(typeof('hello'));  // string
+console.log(typeof(''));       // string
+console.log(typeof(""));       // string
+console.log(typeof(true));     // boolean
+console.log(typeof(4.2));      // number
+console.log(typeof(4));        // number (not integer)
+console.log(typeof([1,2,3]));  // object (not array)
+console.log(typeof({x:1, y:2}));     // object
+console.log(typeof(function() {}));  // function
 
-console.log(typeof(null));  // object
-console.log(typeof(undefined));  // undefined
-console.log(NaN);          // number
+console.log(typeof(null));        // object (not null)
+console.log(typeof(undefined));   // undefined
+console.log(NaN);                 // number  (strange but true.  Not A Number is typeof number)
 
 let arr = ['hello', true, 4, {x:1, y:2}, [1,2,3], "asd", NaN, null, undefined];
 for (let i = 0; i< arr.length; i++) {
