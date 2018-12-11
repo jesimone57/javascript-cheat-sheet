@@ -180,11 +180,52 @@ if (5 === 5) {
 }
 console.log(msg);  // error msg is not defined
 ```
-var does not respect block Scope
-var msg gets hoisted to the top of the scope as if it were defined globally at the top of the .js file
+- var does not respect block Scope 
+- var msg gets hoisted to the top of the scope as if it were defined globally at the top of the .js file
 ```
 if (5 === 5) {
     var msg = '5 equal 5';
 }
 console.log(msg);  // 5 equal 5
+```
+
+### Immediately Invoked Function Expression (IIFE)
+```
+function a() {
+    console.log("in function");  // defined but won't execute unless called
+}
+
+// function name not needed for IIFE
+(function () {
+    console.log("in function");
+}) ();
+```
+```
+(function a() {
+    console.log("in function");  //defined and immediately executed
+}) ();
+```
+
+### Closures
+Closures allow functions to be available after executing
+```
+// IIFE returns a closure
+let app = ( function() {
+    let carId = 123;
+    let getId = function() {
+        return carId;
+    };
+    return { getId: getId };  // return object with a getId property whose value is the function getId
+}) ();
+console.log(app.getId());
+```
+
+### Arrow Functions
+```
+let func = () => 123;   // func takes no arguments
+console.log(typeof(func));
+
+let func2 = (a, b) => 123 + a * b;   // func2 takes 2 parameters
+console.log(typeof(func2));
+console.log(func2(2,3));
 ```
