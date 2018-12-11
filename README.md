@@ -243,3 +243,24 @@ Number.prototype.power = function(exp) {
 };
 console.log((5).power(2));   // 25
 ```
+
+### Array Iteration
+```
+let cars = [
+    { carId:123, style:'sedan'},
+    { carId:456, style:'convertible'},
+    { carId:789, style:'sedan'}
+];
+
+cars.forEach( i => console.log(i));     // iterate over array
+
+// filtering elements out of array
+let sedans = cars.filter( i => i.style === 'sedan');
+console.log(sedans);
+
+let result = cars.every( i => i.carId > 0);
+console.log(result);    // true because every element has carId > 0
+
+let carX = cars.find( i => i.carId > 500);
+console.log(carX);    //  { carId:789, style:'sedan'}
+```
