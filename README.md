@@ -181,6 +181,7 @@ if (5 === 5) {
 console.log(msg);  // error msg is not defined
 ```
 var does not respect block Scope
+var msg gets hoisted to the top of the scope as if it were defined globally at the top of the .js file
 ```
 if (5 === 5) {
     var msg = '5 equal 5';
