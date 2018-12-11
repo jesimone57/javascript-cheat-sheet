@@ -258,9 +258,11 @@ cars.forEach( i => console.log(i));     // iterate over array
 let sedans = cars.filter( i => i.style === 'sedan');
 console.log(sedans);
 
+// apply a test condition to see if condition holds for every element in the array
 let result = cars.every( i => i.carId > 0);
 console.log(result);    // true because every element has carId > 0
 
+// find a specific element satisfying a given condition
 let carX = cars.find( i => i.carId > 500);
 console.log(carX);    //  { carId:789, style:'sedan'}
 ```
