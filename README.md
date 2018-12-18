@@ -284,4 +284,19 @@ console.log(car.identify()); // Car Id 123
 ```
 
 ### Browser Object Model
-[Window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
+[window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
+```
+console.log(window.innerWidth);
+console.log(innerWidth);  // same
+console.log(window.innerHeight);
+console.log(innerHeight);  // same
+```
+
+[location](https://developer.mozilla.org/en-US/docs/Web/API/Location)
+```
+console.log(window.document.location.href);   // http://localhost:8080
+console.log(document.location.href);          // same
+console.log(location.href);                   // same
+```
+
+[document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
