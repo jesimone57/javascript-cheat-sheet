@@ -282,3 +282,6 @@ let car = new Car(123);
 console.log(car);
 console.log(car.identify()); // Car Id 123
 ```
+
+### Browser Object Model
+[Window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
