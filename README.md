@@ -266,3 +266,19 @@ console.log(result);    // true because every element has carId > 0
 let carX = cars.find( i => i.carId > 500);
 console.log(carX);    //  { carId:789, style:'sedan'}
 ```
+
+### Classes
+```
+class Car {
+    // define single argument constructor
+    constructor(id) {
+        this.id = id;
+    }
+    identify() {
+        return `Car Id ${this.id}`;
+    }
+}
+let car = new Car(123);
+console.log(car);
+console.log(car.identify()); // Car Id 123
+```
