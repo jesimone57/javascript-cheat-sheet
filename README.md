@@ -300,3 +300,31 @@ console.log(location.href);                   // same
 ```
 
 [document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
+
+### Error Handling using try/catch
+```
+try {
+    let car = newCar;    // reference error:  newCar is not defined
+} catch (error) {
+    console.log('error: ', error);
+} finally {
+    console.log('this always executes');
+}
+console.log('continuing ...');
+```
+
+### Developer Defined Errors
+```
+try {
+    // any code here ..
+    throw new Error('some custom error condition thrown!');  // error thrown here
+} catch (error) {
+    console.log('error: ', error);                           // and caught here
+} finally {
+    console.log('this always executes');
+}
+console.log('continuing ...');
+```
+
+### Promises
+A promize is a placeholder for an asychronous call
