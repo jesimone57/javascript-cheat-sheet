@@ -328,3 +328,19 @@ console.log('continuing ...');
 
 ### Promises
 A promize is a placeholder for an asychronous call
+```
+// creating a promise
+let promise = new Promise(
+    function(resolve, reject) {
+        setTimeout(resolve, 2000, 'someValue');
+    }
+);
+
+console.log(promise);
+
+// settling a promise
+promise.then(
+    value => console.log('fulfilled '+ value),
+    error => console.log('rejected '+ error)
+);
+```
